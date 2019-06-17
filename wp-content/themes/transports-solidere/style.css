@@ -7,11 +7,238 @@ Description: Thème pour journal
 
 /* Reset CSS by Bruno Simon | Github : https://github.com/brunosimon */
 
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;text-size-adjust:100%}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*,::after,::before,:after,:before{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}button,input,select,textarea{color:inherit;font-size:inherit;font-style:inherit;font-family:inherit;-webkit-border-radius:0;border-radius:0;-webkit-padding-start:0;align-items:flex-start;text-index:0;border:none;outline:0;background:0 0;padding:0;margin:0;width:auto;height:auto;line-height:1em}button,input[type=color],input[type=date],input[type=datetime-local],input[type=datetime],input[type=email],input[type=file],input[type=month],input[type=number],input[type=password],input[type=reset],input[type=search],input[type=submit],input[type=tel],input[type=text],input[type=time],input[type=url],input[type=week],select,textarea{height:1em;-webkit-appearance:none;-moz-appearance:none;appearance:none}input[type=color]{width:1em}input::-ms-clear{display:none}details,summary{-webkit-appearance:none;-moz-appearance:none;appearance:none}mark{background:0 0}hr{height:1px;margin:0;padding:0}u{text-decoration:none}table th{text-align:left}a{color:inherit;outline:0}
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+body {
+    line-height: 1;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+*,
+::after,
+::before,
+:after,
+:before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+button,
+input,
+select,
+textarea {
+    color: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-padding-start: 0;
+    align-items: flex-start;
+    text-index: 0;
+    border: none;
+    outline: 0;
+    background: 0 0;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    line-height: 1em
+}
+
+button,
+input[type=color],
+input[type=date],
+input[type=datetime-local],
+input[type=datetime],
+input[type=email],
+input[type=file],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=reset],
+input[type=search],
+input[type=submit],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week],
+select,
+textarea {
+    height: 1em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+input[type=color] {
+    width: 1em
+}
+
+input::-ms-clear {
+    display: none
+}
+
+details,
+summary {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+mark {
+    background: 0 0
+}
+
+hr {
+    height: 1px;
+    margin: 0;
+    padding: 0
+}
+
+u {
+    text-decoration: none
+}
+
+table th {
+    text-align: left
+}
+
+a {
+    color: inherit;
+    outline: 0
+}
 
 
 body {
-    font-family:"Roboto";
+    font-family: "Roboto";
 }
 
 
@@ -49,37 +276,37 @@ body {
 
 
 @font-face {
-	font-family: "SignikaBold";
-	src: url('./assets/fonts/Signika-Bold.ttf');
+    font-family: "SignikaBold";
+    src: url('./assets/fonts/Signika-Bold.ttf');
 }
 
 @font-face {
-	font-family: "SignikaRegular";
-	src: url('./assets/fonts/Signika-Regular.ttf');
+    font-family: "SignikaRegular";
+    src: url('./assets/fonts/Signika-Regular.ttf');
 }
 
 @font-face {
-	font-family: "SignikaLight";
-	src: url('./assets/fonts/Signika-Light.ttf');
+    font-family: "SignikaLight";
+    src: url('./assets/fonts/Signika-Light.ttf');
 }
 
 .flex-container {
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 header {
-    padding:20px 0;
+    padding: 20px 0;
 }
 
 .logo {
-    text-transform:uppercase;
-    font-family:"SignikaRegular";
-    font-size:24px;
+    text-transform: uppercase;
+    font-family: "SignikaRegular";
+    font-size: 24px;
 }
 
 .color-green {
-    color:#3AE7AF;
+    color: #3AE7AF;
 }
 
 .nav {
@@ -88,40 +315,40 @@ header {
 }
 
 
-.menu-top_menu-container > ul {
-    display:flex;
+.menu-top_menu-container>ul {
+    display: flex;
 }
 
-.menu-top_menu-container > ul li {
-    padding-left:40px;
+.menu-top_menu-container>ul li {
+    padding-left: 40px;
 }
 
-.menu-top_menu-container > ul li a {
-    text-decoration:none;
-    text-transform:uppercase;
-    font-size:18px;
+.menu-top_menu-container>ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
 }
 
 .col-3 {
-    flex:0.32;
-    background:#3AE7AF;
+    flex: 0.32;
+    background: #3AE7AF;
 }
 
 .col-6 {
-    flex:0.60;
+    flex: 0.60;
 }
 
 .middle {
-    margin:150px 0;
+    margin: 150px 0;
 }
 
 .no-under {
-    text-decoration:none;
+    text-decoration: none;
 }
 
 h1 {
-    font-family:"SignikaBold";
-    font-size:54px;
+    font-family: "SignikaBold";
+    font-size: 54px;
 }
 
 p {
@@ -135,18 +362,36 @@ div.tooltip {
     position: absolute;
     text-align: center;
     color: black;
-    width: 275px;
-    height: 37px;
-    transform:translate(-50%,-50%);
-    padding: 2px;
-    font: 12px sans-serif;
-    background: grey;
+    width: 200px;
+    height: 130px;
+    transform: translate(-65%, -100%);
+    background: #fff;
     border: 0px;
-    border-radius: 8px;
+    border-radius: 0px;
     pointer-events: none;
 }
 
+div.tooltip:after {
+    content: '';
+    border-color: #fff transparent;
+    border-style: solid;
+    border-width: 10px 10px 0px 10px;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+
+.title-tooltip {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    font-weight: 500;
+}
 
 .department {
-    stroke:#fff
+    stroke: #fff
 }
