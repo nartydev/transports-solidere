@@ -395,3 +395,99 @@ div.tooltip:after {
 .department {
     stroke: #fff
 }
+
+.content-data {
+    min-width: 30%
+}
+
+.title-data {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.year {
+    font-size: 87px;
+    font-weight: 800;
+}
+
+.price-gasoline {
+    color: #3AE7AF;
+    font-size: 58px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.m-5 {
+    margin-top: 50px;
+}
+
+.content-data-score {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-1-gini {
+    background: #E4EBED;
+    border-radius: 5px 0 0 5px;
+    width: 13%;
+    height: 30px;
+}
+
+.section-2-gini {
+    background: #CCDBDB;
+    width: 13%;
+    height: 30px;
+}
+
+.section-3-gini {
+    background: #AFC3C6;
+    width: 13%;
+    height: 30px;
+}
+
+.section-4-gini {
+    background: #76878E;
+    width: 13%;
+    height: 30px;
+}
+
+.section-5-gini {
+    background: #566368;
+    width: 13%;
+    height: 30px;
+}
+
+.section-6-gini {
+    background: #3C4B51;
+    width: 13%;
+    height: 30px;
+}
+
+.section-7-gini {
+    background: #242E35;
+    width: 13%;
+    border-radius: 0 5px 5px 0;
+    height: 30px;
+}
+
+.section-transports {
+    min-width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.img-transports {
+    width: 90%
+}
+
+.first-top {
+    margin-top: 110px;
+}
