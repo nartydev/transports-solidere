@@ -239,8 +239,10 @@ a {
 
 body {
     font-family: "Roboto";
+    background: #F9F9F9;
 }
 
+#map {}
 
 .container {
     width: 100%;
@@ -364,7 +366,7 @@ div.tooltip {
     color: black;
     width: 200px;
     height: 130px;
-    transform: translate(-65%, -100%);
+    transform: translate(-60%, -100%);
     background: #fff;
     border: 0px;
     border-radius: 0px;
@@ -490,4 +492,138 @@ div.tooltip:after {
 
 .first-top {
     margin-top: 110px;
+}
+
+.sample-title-first {
+    font-size: 75px;
+    font-family: "SignikaBold";
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -50px;
+    cursor: pointer;
+}
+
+.sample-title-second {
+    font-size: 75px;
+    font-family: "SignikaBold";
+    opacity: 0.1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: -50px;
+    cursor: pointer;
+}
+
+.content-slider {
+    width: 900px;
+    margin: 100px auto;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    height: 60vh;
+}
+
+.content-category {
+    overflow: hidden !important;
+    width: 100%;
+    height: 250px;
+    border-radius: 4px;
+    background: #EEEEEE;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07);
+}
+
+.content-title {
+    font-size: 75px;
+    font-family: "SignikaBold";
+}
+
+.content-article {
+    text-transform: initial;
+    color: #999B9E;
+    font-size: 20px;
+}
+
+.global-content-category {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.content-all {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    border-radius: 4px;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+.img-category {
+    position: absolute;
+    top: 50%;
+    width: 20%;
+    left: 0;
+    transform: scale(0) translateY(-50%);
+    z-index: 111;
+    transform-origin: center center;
+    transition: .5s ease-in-out;
+}
+
+.img-category.active {
+    position: absolute;
+    top: 50%;
+    width: 20%;
+    left: 0;
+    transform: scale(1) translateY(-50%);
+    z-index: 111;
+    transform-origin: center center;
+    transition: .5s ease-in-out;
+}
+
+.content-button-next {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E2E2E3;
+    border-radius: 4px 0 0 0;
+}
+
+.size-icon-arrow {
+    width: 50%;
+}
+
+.container-category {
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container-category.active {
+    opacity: 1;
+    z-index: 11;
+}
+
+.container-category.active .img-category {
+    transform: scale(1);
+}
+
+.img-politique {
+    width: 12%;
 }

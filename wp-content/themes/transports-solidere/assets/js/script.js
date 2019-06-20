@@ -36,7 +36,7 @@ Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, barbaCon
    const projection = d3.geoConicConformal()
       .center([2.454071, 46.279229])
       .scale(5000)
-      .translate([width / 2 + 50, height / 2]);
+      .translate([width / 2 + 50, height / 2 + 20]);
 
    path.projection(projection);
 

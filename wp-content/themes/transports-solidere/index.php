@@ -122,7 +122,7 @@
 			div.html(`<div class="title-tooltip">${el.title}</div> 
 					<br/>
 				${el.percent} <br/> ${el.percent_gini} `)  
-				.style("left", (d3.event.pageX + 25) + "px")     
+				.style("left", (d3.event.pageX + 30 ) + "px")     
 				.style("top", (d3.event.pageY - 25) + "px")
 		})
 		classTooltip.on("mouseout", function(d) {
