@@ -18,9 +18,6 @@ get_header();
                                 <div class="content-title social-title">
                                     Social
                                 </div>
-                                <div class="content-article social-desc">
-                                    4 articles
-                                </div>
                             </div>
                             <?php
                             $category_id = get_cat_ID( 'Social' );
@@ -38,9 +35,6 @@ get_header();
                                 <div class="content-title numeric-title">
                                     Numérique
                                 </div>
-                                <div class="content-article numeric-desc">
-                                    5 articles
-                                </div>
                             </div>
                             <?php
                             $category_id = get_cat_ID( 'Numérique' );
@@ -57,9 +51,6 @@ get_header();
                             <div class="global-content-category">
                             <div class="content-title">
                                 Politique
-                            </div>
-                            <div class="content-article">
-                                2 articles
                             </div>
                             </div>
                             <?php
@@ -88,7 +79,6 @@ let secondOutTitle = document.querySelector('.sample-title-second')
 let allCategories = [...document.querySelectorAll('.container-category')]
 let allTexts = [...document.querySelectorAll('.global-content-category')]
 let allContentTitle = [...document.querySelectorAll('.content-title')]
-let allContentArticle = [...document.querySelectorAll('.content-article')]
 
 allCategories[0].classList.add('active')
 
@@ -97,9 +87,7 @@ fisrtOutTitle.addEventListener('click', () => {
     if(idSlide == 0) {
         TweenMax.to(fisrtOutTitle, 0.5, { y: 100, opacity:0, delay:0.5, ease: Power4.easeOut })
         TweenMax.to(allContentTitle[0], 0.5, { y: 180, ease: Power4.easeOut})
-        TweenMax.to(allContentArticle[0], 0.5, { y: 180, ease: Power4.easeOut})
         TweenMax.to(allContentTitle[1], 0.5, { y: 0, ease: Power4.easeOut})
-        TweenMax.to(allContentArticle[1], 0.5, { y: 0, ease: Power4.easeOut })
         setTimeout(() => {
             allCategories[0].classList.remove('active')
             allCategories[1].classList.add('active')
@@ -139,19 +127,10 @@ fisrtOutTitle.addEventListener('click', () => {
                             y: 180,
                             ease: Power4.easeOut
                         })
-        TweenMax.to(allContentArticle[1], 0.5, {
-                            y: 180,
-                            ease: Power4.easeOut
-                        })
          TweenMax.to(allContentTitle[0], 0.5, {
                             y: 0,
                             ease: Power4.easeOut
                         })
-        TweenMax.to(allContentArticle[0], 0.5, {
-                            y: 0,
-                            ease: Power4.easeOut
-                        })
-        
         setTimeout(() => {
             allCategories[1].classList.remove('active')
             allCategories[0].classList.add('active')
@@ -199,15 +178,7 @@ secondOutTitle.addEventListener('click', () => {
                             y: -180,
                             ease: Power4.easeOut
                         })
-        TweenMax.to(allContentArticle[0], 0.5, {
-                            y: -180,
-                            ease: Power4.easeOut
-                        })
          TweenMax.to(allContentTitle[2], 0.5, {
-                            y: 0,
-                            ease: Power4.easeOut
-                        })
-        TweenMax.to(allContentArticle[2], 0.5, {
                             y: 0,
                             ease: Power4.easeOut
                         })
@@ -250,15 +221,7 @@ secondOutTitle.addEventListener('click', () => {
                             y: -180,
                             ease: Power4.easeOut
                         })
-        TweenMax.to(allContentArticle[2], 0.5, {
-                            y: -180,
-                            ease: Power4.easeOut
-                        })
          TweenMax.to(allContentTitle[0], 0.5, {
-                            y: 0,
-                            ease: Power4.easeOut
-                        })
-        TweenMax.to(allContentArticle[0], 0.5, {
                             y: 0,
                             ease: Power4.easeOut
                         })

@@ -4,7 +4,8 @@
 	<meta charset="<?php bloginfo('charset');?>">
 	<title><?php bloginfo('name'); ?></title>
 	<meta name="description" content="<?php bloginfo('description');?>"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?><?= "?d=".rand(0,10000); ?>" media="all" />
 	<?php if(is_home()){ echo '<meta name="fragment" content="!"/>';} ?>
 	<?php wp_head();?>
@@ -18,7 +19,7 @@
 			<div class="flex-container">
 				<a class="no-under" href="http://localhost/transports-solidere/">
 					<div class="logo">
-						Transports Solid'<span class="color-green">ère</span>
+						Transports <span class="bold"> Solid'<span class="color-green">ère</span></span>
 					</div>
 			    </a>
 				<div class="nav">
