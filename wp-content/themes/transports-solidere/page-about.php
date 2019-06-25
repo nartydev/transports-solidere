@@ -22,16 +22,54 @@ get_header();
             </h2>
             <div class="flex-container">
                 <div class="col-3-about">
-                    <div class="bold">Sensibiliser</div>
-                    <p>Le but premier est d’éveiller les consciences sur les raisons et l’impact de la « fracture mobilité » en France.  </p>
+                    <div class="bold-little-title">Sensibiliser</div>
+                    <p class="target-text">Le but premier est d’éveiller les consciences sur les raisons et l’impact de la « fracture mobilité » en France.  </p>
                 </div>
                 <div class="col-3-about">
-                    <div class="bold">Servir de relai</div>
-                    <p>Toute personne engagée, et désirant le changement peut réutiliser nos graphiques pour appuyer ses propos.</p>
+                    <div class="bold-little-title">Servir de relai</div>
+                    <p class="target-text">Toute personne engagée, et désirant le changement peut réutiliser nos graphiques pour appuyer ses propos.</p>
                 </div>
                 <div class="col-3-about">
-                    <div class="bold">Proposer des opportunités </div>
-                    <p>Les articles sont grâce aux adresses, aux conseils, et aux solutions proposées, des oppportunités à saisir.  </p>
+                    <div class="bold-little-title">Proposer des opportunités </div>
+                    <p class="target-text">Les articles sont grâce aux adresses, aux conseils, et aux solutions proposées, des oppportunités à saisir.  </p>
+                </div>
+            </div>
+        </div>
+        <div class="space">
+            <h2 class="middle-title">
+            <span class="bold">Transports Solid’<span class="color-green">ère</span></span>,<br/>
+            l'équipe.
+            </h2>
+            <div class="flex-container">
+                <div class="col-3-staff">
+                    <div class="content-img-staff">
+                        <img src="<?= get_template_directory_uri() ?>/assets/img/photos/about/louise.jpeg" alt="L'équipe" class="img-responsive">
+                        <div class="green-overlay"></div>
+                    </div>
+                    <div class="content-desc-staff">
+                        <div class="name-staff">Louise Bonnaves</div>
+                        <div class="desc-staff">Direction Artistique, Rédaction, Illustrations </div>
+                    </div>
+                </div>
+                <div class="col-3-staff">
+                    <div class="content-img-staff">
+                        <img src="<?= get_template_directory_uri() ?>/assets/img/photos/about/yoan.jpg" alt="L'équipe" class="img-responsive">
+                        <div class="green-overlay"></div>
+                    </div>
+                    <div class="content-desc-staff">
+                        <div class="name-staff">Yoan Gross</div>
+                        <div class="desc-staff"> Rédaction, Motion Design, Développement, Marketing </div>
+                    </div>
+                </div>
+                <div class="col-3-staff">
+                    <div class="content-img-staff">
+                        <img src="<?= get_template_directory_uri() ?>/assets/img/photos/about/kerian.jpg" alt="L'équipe" class="img-responsive">
+                        <div class="green-overlay"></div>
+                    </div>
+                    <div class="content-desc-staff">
+                        <div class="name-staff">Kérian Pelat</div>
+                        <div class="desc-staff"> Développement, Marketing </div>
+                    </div>
                 </div>
             </div>
         </div>

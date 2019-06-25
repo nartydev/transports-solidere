@@ -192,7 +192,6 @@ input[type="url"],
 input[type="week"],
 select,
 textarea {
-  height: 1em;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -241,8 +240,7 @@ body {
   background: #f9f9f9;
 }
 
-#map {
-}
+#map {}
 
 .container {
   width: 100%;
@@ -315,15 +313,15 @@ header {
   align-items: center;
 }
 
-.menu-top_menu-container > ul {
+.menu-top_menu-container>ul {
   display: flex;
 }
 
-.menu-top_menu-container > ul li {
+.menu-top_menu-container>ul li {
   padding-left: 40px;
 }
 
-.menu-top_menu-container > ul li a {
+.menu-top_menu-container>ul li a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 18px;
@@ -331,7 +329,12 @@ header {
 
 .col-3 {
   flex: 0.32;
-  background: #3ae7af;
+}
+
+.motion {
+  width: 175%;
+  margin-left: -56%;
+  margin-top: -16%;
 }
 
 .col-6 {
@@ -352,7 +355,7 @@ h1 {
 }
 
 p {
-  line-height: 1.3;
+  line-height: 1.4;
   margin-top: 30px;
   font-weight: 300;
   font-size: 20px;
@@ -635,15 +638,17 @@ div.tooltip:after {
 
 .mt-4 {
   margin-top: 40px;
+  width: 70%;
 }
 
 .mt-2 {
   margin-top: 20px;
 }
 
-.description > p {
+.description>p {
   margin-top: 15px;
   font-weight: 400;
+  width: 59%;
 }
 
 .flex-between {
@@ -672,11 +677,11 @@ h2.title-article {
   font-family: "SignikaBold";
 }
 
-h2.title-article > a {
+h2.title-article>a {
   text-decoration: none;
 }
 
-.box .content-img > img {
+.box .content-img>img {
   width: 100%;
   object-fit: cover;
   border-radius: 4px 4px 0 0;
@@ -690,11 +695,11 @@ h2.title-article > a {
   position: relative;
 }
 
-.section-gini:hover > div {
+.section-gini:hover>div {
   opacity: 1;
 }
 
-.section-gini > div {
+.section-gini>div {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -722,7 +727,7 @@ footer {
   padding: 0;
 }
 
-.social-network > li {
+.social-network>li {
   display: inline-block;
   padding-left: 10px;
 }
@@ -732,7 +737,7 @@ footer {
 .col-4 {
   flex: 0.44;
   position: relative;
-  margin-top: 30px;
+  margin-top: 90px;
 }
 
 .road-img {
@@ -756,5 +761,168 @@ footer {
 }
 
 .space {
-  margin: 50px 0;
+  margin: 150px 0;
+}
+
+.bold-little-title {
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.target-text {
+  margin-top: 0;
+}
+
+.col-3-about {
+  margin-top: 45px;
+  flex: 0.3;
+  position: relative;
+  padding-left: 25px;
+}
+
+.col-3-about::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  top: 0;
+  bottom: 0;
+  background: #3ae7af;
+}
+
+.col-3-staff {
+  margin-top: 35px;
+  flex: 0.3;
+  position: relative;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.content-desc-staff {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.name-staff {
+  font-family: "SignikaBold";
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.desc-staff {
+  color: #b5bac2;
+}
+
+.content-img-staff {
+  position: relative;
+}
+
+.content-img-staff>div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 2px;
+  background: #3ae7af;
+  transition: 0.5s ease-in-out;
+  opacity: 0.7;
+}
+
+.content-img-staff:hover>div {
+  opacity: 0;
+}
+
+.middle-text {
+  padding: 10px 0 20px;
+}
+
+.last-text {
+  padding: 0px 0 20px;
+}
+
+.box-contact {
+  flex: 0.6;
+  padding: 60px;
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.06);
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.input-contact,
+textarea {
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  font-size: 20px;
+  margin-bottom: 25px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.submit-button {
+  background: #3ae7af;
+  border-radius: 4px;
+  width: 100%;
+  padding: 15px;
+  color: #fff;
+  font-family: "SignikaBold";
+}
+
+.contact-form {
+  margin-top: 50px;
+}
+
+.post-title {
+  font-size: 52px;
+  font-family: "SignikaRegular";
+}
+
+.post-info {
+  border-top: 1px solid #C0C3C7;
+  border-bottom: 1px solid #C0C3C7;
+  font-size: 16px;
+  color: #92979F;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+.post-intro>p {
+  font-size: 30px;
+}
+
+.header-post {
+  width: 55%;
+}
+
+.post-cate {
+  padding: 20px 0;
+}
+
+.min-container {
+  width: 760px;
+  margin: auto;
+  display: flex;
+}
+
+.col-title {
+  flex: 0.3;
+  width: 30%;
+  font-family: "SignikaBold";
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.col-content {
+  flex: 0.7;
+  width: 70%;
+}
+
+.col-content>p {
+  margin-top: 0;
 }

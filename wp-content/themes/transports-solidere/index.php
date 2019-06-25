@@ -4,7 +4,9 @@
       <div class="barba-container" data-namespace="homepage"> 
 	  	<div class="container">
 		  	<div class="flex-container middle">
-			  <div class="col-3"></div>
+			  <div class="col-3">
+	  			<div class="motion"></div>
+			  </div>
 			  <div class="col-6">
 				  <h1>Les transports, marqueurs sociaux mais moteurs de désenclavement ?</h1>
 				  <p>La mobilité est au coeur de la vie de l’Homme moderne, que ce soit pour remplir son frigo, aller travailler ou sociabiliser. Avec l’évolution des moyens de transports, la notion de distance a beaucoup évolué, les espaces de la vie quotidienne aussi, mais pas pour tout le monde. Qui sont ces délaissés, et pourquoi le sont-ils ? Numériques, sociales ou encore politiques, des solutions existent.</p>
@@ -76,6 +78,7 @@
 	  </div>
 	</div>
 	<div class="content-display">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.2/d3.min.js"></script>
 		<script src="<?= get_template_directory_uri() ?>/assets/js/dataviz.js"></script>
 	</div>

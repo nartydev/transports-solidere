@@ -103,3 +103,13 @@ setTimeout(() => {
         })
     })
 }, 200)
+
+const element = document.querySelector('.motion')
+
+lottie.loadAnimation({
+    container: element, // the dom element that will contain the animation
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'http://localhost/transports-solidere/wp-content/themes/transports-solidere/assets/data.json' // the path to the animation json
+});
