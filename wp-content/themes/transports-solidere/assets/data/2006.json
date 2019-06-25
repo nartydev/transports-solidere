@@ -1,16 +1,4 @@
 [{
-    "title": "Haute-Corse",
-    "percent_gini": "0.4 d'indice de Gini",
-    "percent": "81.85 %",
-    "points": "+1.64 point",
-    "from": "par rapport à la France"
-}, {
-    "title": "Corse-du-Sud",
-    "percent_gini": "0.38 d'indice de Gini",
-    "percent": "83.09 %",
-    "points": "+2.88 points",
-    "from": "par rapport à la France"
-}, {
     "title": "Alpes-Maritimes",
     "percent_gini": "0.38 d'indice de Gini",
     "percent": "77.3 %",
@@ -321,12 +309,6 @@
     "percent_gini": "0.32 d'indice de Gini",
     "percent": "85.73 %",
     "points": "+5.52 points",
-    "from": "par rapport à la France"
-}, {
-    "title": "Territoire de Belfort",
-    "percent_gini": "0.34 d'indice de Gini",
-    "percent": "82.22 %",
-    "points": "+2.01 points",
     "from": "par rapport à la France"
 }, {
     "title": "Vosges",

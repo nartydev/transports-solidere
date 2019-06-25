@@ -8,7 +8,7 @@ get_header();
         <div class="barba-container"> 
             <div class="content-slider">
                 <img src="<?= get_template_directory_uri() ?>/assets/img/social@2x.png" class="img-category active img-social">
-                <img src="<?= get_template_directory_uri() ?>/assets/img/dessin@2x.png" class="img-category img-social">
+                <img src="<?= get_template_directory_uri() ?>/assets/img/dessin@2x.png" class="img-category img-numeric">
                 <img src="<?= get_template_directory_uri() ?>/assets/img/politique@2x.png" class="img-category img-politique">
                 <div class="sample-title-first">Numérique</div>
                 <div class="content-all">
@@ -78,6 +78,7 @@ let nextSlide = 0
 let fisrtOutTitle = document.querySelector('.sample-title-first') 
 let secondOutTitle = document.querySelector('.sample-title-second') 
 let allCategories = [...document.querySelectorAll('.container-category')]
+let allImages = [...document.querySelectorAll('.img-category')]
 let allTexts = [...document.querySelectorAll('.global-content-category')]
 let allContentTitle = [...document.querySelectorAll('.content-title')]
 
@@ -97,7 +98,9 @@ function showNext(actual, next) {
     TweenMax.to(fisrtOutTitle, 0.5, { y: 100, opacity:0, delay:0.5, ease: Power4.easeOut })
     TweenMax.to(allContentTitle[actual], 0.5, { y: 180, ease: Power4.easeOut})
     TweenMax.to(allContentTitle[next], 0.5, { y: 0, ease: Power4.easeOut})
+    allImages[actual].classList.remove('active')
     setTimeout(() => {
+        allImages[next].classList.add('active')
         console.log('next: ', next, 'actual: ', actual)
         allCategories[actual].classList.remove('active')
         allCategories[next].classList.add('active')
@@ -122,7 +125,9 @@ function showPrev(actual, next) {
        
     TweenMax.to(allContentTitle[actual], 0.5, {y: -180,ease: Power4.easeOut})
     TweenMax.to(allContentTitle[next], 0.5, {y: 0,ease: Power4.easeOut})
+    allImages[actual].classList.remove('active')
     setTimeout(() => {
+        allImages[next].classList.add('active')
         console.log('next: ', next, 'actual: ', actual)
         allCategories[actual].classList.remove('active')
         allCategories[next].classList.add('active')

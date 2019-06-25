@@ -328,17 +328,16 @@ header {
 }
 
 .col-3 {
-  flex: 0.32;
+  flex: 0.5;
 }
 
 .motion {
-  width: 175%;
-  margin-left: -56%;
-  margin-top: -16%;
+  margin-top: -10%;
 }
 
 .col-6 {
-  flex: 0.6;
+  flex: 0.45;
+  padding-right: 50px;
 }
 
 .middle {
@@ -363,10 +362,9 @@ p {
 
 div.tooltip {
   position: absolute;
-  text-align: center;
   color: black;
   width: 200px;
-  height: 130px;
+  height: auto;
   transform: translate(-60%, -100%);
   background: #fff;
   border: 0px;
@@ -394,8 +392,20 @@ div.tooltip:after {
   color: #fff;
   padding: 10px;
   width: 100%;
+  text-align: center;
   font-weight: 500;
   border-radius: 4px 4px 0 0;
+  font-family: "SignikaBold";
+}
+
+.pad {
+  padding: 15px;
+}
+
+.marge {
+  margin: 0px 0 8px 0;
+  font-size: 15px;
+  font-family: "SignikaRegular";
 }
 
 .department {
@@ -577,19 +587,12 @@ div.tooltip:after {
   left: 0;
   transform: scale(0) translateY(-50%);
   z-index: 111;
-  transform-origin: center center;
-  transition: 0.5s ease-in-out;
+  transform-origin: top;
+  transition: 0.3s ease-in-out;
 }
 
 .img-category.active {
-  position: absolute;
-  top: 50%;
-  width: 20%;
-  left: 0;
   transform: scale(1) translateY(-50%);
-  z-index: 111;
-  transform-origin: center center;
-  transition: 0.5s ease-in-out;
 }
 
 .content-button-next {
@@ -691,22 +694,80 @@ h2.title-article>a {
   text-decoration: none;
 }
 
-.section-gini {
+
+.section-gini,
+.section-transports {
   position: relative;
 }
 
-.section-gini:hover>div {
+.section-gini:hover>div,
+.section-transports:hover>div {
   opacity: 1;
+  z-index: 11;
 }
 
 .section-gini>div {
   opacity: 0;
   position: absolute;
-  top: 0;
+  top: -220%;
   padding: 20px;
   background: #fff;
   left: 50%;
   transform: translateX(-50%);
+  width: 150px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07);
+  transition: .1s ease-in-out;
+  text-align: center;
+  font-family: "SignikaRegular";
+}
+
+.section-transports>div {
+  opacity: 0;
+  position: absolute;
+  top: 74%;
+  z-index: -111;
+  padding: 20px;
+  background: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07);
+  font-weight: 800;
+  transition: .1s ease-in-out;
+  text-align: center;
+  font-family: "SignikaRegular";
+}
+
+#map {
+  position: relative;
+}
+
+.section-gini>div::after {
+  content: "";
+  border-color: #fff transparent;
+  border-style: solid;
+  border-width: 10px 10px 0px 10px;
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 90%);
+}
+
+.section-transports>div::after {
+  content: "";
+  border-color: #fff transparent;
+  border-style: solid;
+  border-width: 10px 10px 0px 10px;
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: -17px;
+  left: 50%;
+  transform: translate(-50%, 90%) rotate(180deg);
 }
 
 /* FOOTER */
