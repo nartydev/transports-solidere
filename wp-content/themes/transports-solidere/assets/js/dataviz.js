@@ -55,6 +55,44 @@ var div = d3.select("body").append("div")
     .attr("class", "tooltip")
     .style("opacity", 0);
 
+function callOther(el) {
+    if (el.percent_gini.slice(0, 4) >= 0.0 && el.percent_gini.slice(0, 4) <= 0.32) {
+        return `<div class="bloc-1-gini"></div>`
+    } else if (el.percent_gini.slice(0, 4) >= 0.32 && el.percent_gini.slice(0, 4) <= 0.33) {
+        return `<div class="bloc-2-gini"></div>`
+    } else if (el.percent_gini.slice(0, 4) >= 0.33 && el.percent_gini.slice(0, 4) <= 0.33) {
+        return `<div class="bloc-3-gini"></div>`
+    } else if (el.percent_gini.slice(0, 4) >= 0.33 && el.percent_gini.slice(0, 4) <= 0.34) {
+        return `<div class="bloc-4-gini"></div>`
+    } else if (el.percent_gini.slice(0, 4) >= 0.34 && el.percent_gini.slice(0, 4) <= 0.36) {
+        return `<div class="bloc-5-gini"></div>`
+    } else if (el.percent_gini.slice(0, 4) >= 0.36 && el.percent_gini.slice(0, 4) <= 0.37) {
+        return `<div class="bloc-6-gini"></div>`
+    } else if (el.percent_gini.slice(0, 4) >= 0.37 && el.percent_gini.slice(0, 4) <= 0.51) {
+        return `<div class="bloc-7-gini"></div>`
+    }
+    return ""
+}
+
+function callCircle(el) {
+    if (el.percent.slice(0, 4) >= 0.0 && el.percent.slice(0, 4) <= 82.1) {
+        return `<div class="circle-1-cars"></div>`
+    } else if (el.percent.slice(0, 4) >= 81.1 && el.percent.slice(0, 4) <= 83.3) {
+        return `<div class="circle-2-cars"></div>`
+    } else if (el.percent.slice(0, 4) >= 83.3 && el.percent.slice(0, 4) <= 84) {
+        return `<div class="circle-3-cars"></div>`
+    } else if (el.percent.slice(0, 4) >= 84 && el.percent.slice(0, 4) <= 84.9) {
+        return `<div class="circle-4-cars"></div>`
+    } else if (el.percent.slice(0, 4) >= 84.9 && el.percent.slice(0, 4) <= 85.6) {
+        return `<div class="circle-5-cars"></div>`
+    } else if (el.percent.slice(0, 4) >= 85.6 && el.percent.slice(0, 4) <= 86.2) {
+        return `<div class="circle-6-cars"></div>`
+    } else if (el.percent.slice(0, 4) >= 86.2 && el.percent.slice(0, 4) <= 87.3) {
+        return `<div class="circle-7-cars"></div>`
+    }
+    return ""
+}
+
 function updateTooltip(classTooltip, el) {
     classTooltip.on("mouseover", function (d) {
         div.transition()
@@ -63,8 +101,8 @@ function updateTooltip(classTooltip, el) {
         div.html(`<div class="title-tooltip">${el.title}</div> 
                     <div class="pad">
 					<div class="upper marge">Indice de Gini</div>
-                   
-				${el.percent} <br/> <div class="upper marge">Ménages avec voiture</div> ${el.percent_gini}  </div>`)
+                   ${callOther(el)}
+				<span class="bold">${el.percent_gini.slice(0, 4)}</span> <br/><br/> <div class="upper marge">Ménages avec voiture</div> ${callCircle(el)} <span class="bold">${el.percent}</span>  </div>`)
             .style("left", (d3.event.pageX + 20) + "px")
             .style("top", (d3.event.pageY - 10) + "px")
         var centroid = path.centroid(d);
@@ -115,68 +153,68 @@ setTimeout(() => {
                     updateTooltip(selected, el)
                 }
 
-                if (el.percent_gini.slice(0, 4) >= 0.0 && el.percent_gini.slice(0, 4) <= 0.32) {
+                if (el.percent.slice(0, 4) >= 0.0 && el.percent.slice(0, 4) <= 82.1) {
                     let selected = d3.select(`#${name}`).append("circle")
                         .attr('transform', function (d) {
                             return 'translate(' + path.centroid(d) + ')'
                         })
                         .style("z-index", "111")
                         .attr("r", 5)
-                        .attr("fill", "#2ecc71");
+                        .attr("fill", "#ffe5e8");
                     updateTooltip(selected, el)
-                } else if (el.percent_gini.slice(0, 4) >= 0.32 && el.percent_gini.slice(0, 4) <= 0.33) {
+                } else if (el.percent.slice(0, 4) >= 81.1 && el.percent.slice(0, 4) <= 83.3) {
                     let selected = d3.select(`#${name}`).append("circle")
                         .attr('transform', function (d) {
                             return 'translate(' + path.centroid(d) + ')'
                         })
                         .style("z-index", "111")
                         .attr("r", 5)
-                        .attr("fill", "#3498db");
+                        .attr("fill", "#fed0d2");
                     updateTooltip(selected, el)
-                } else if (el.percent_gini.slice(0, 4) >= 0.33 && el.percent_gini.slice(0, 4) <= 0.33) {
+                } else if (el.percent.slice(0, 4) >= 83.3 && el.percent.slice(0, 4) <= 84) {
                     let selected = d3.select(`#${name}`).append("circle")
                         .attr('transform', function (d) {
                             return 'translate(' + path.centroid(d) + ')'
                         })
                         .style("z-index", "111")
                         .attr("r", 5)
-                        .attr("fill", "#e74c3c");
+                        .attr("fill", "#3fffd4");
                     updateTooltip(selected, el)
-                } else if (el.percent_gini.slice(0, 4) >= 0.33 && el.percent_gini.slice(0, 4) <= 0.34) {
+                } else if (el.percent.slice(0, 4) >= 84 && el.percent.slice(0, 4) <= 84.9) {
                     let selected = d3.select(`#${name}`).append("circle")
                         .attr('transform', function (d) {
                             return 'translate(' + path.centroid(d) + ')'
                         })
                         .style("z-index", "111")
                         .attr("r", 5)
-                        .attr("fill", "#e67e22");
+                        .attr("fill", "#00f5bd");
                     updateTooltip(selected, el)
-                } else if (el.percent_gini.slice(0, 4) >= 0.34 && el.percent_gini.slice(0, 4) <= 0.36) {
+                } else if (el.percent.slice(0, 4) >= 84.9 && el.percent.slice(0, 4) <= 85.6) {
                     let selected = d3.select(`#${name}`).append("circle")
                         .attr('transform', function (d) {
                             return 'translate(' + path.centroid(d) + ')'
                         })
                         .style("z-index", "111")
                         .attr("r", 5)
-                        .attr("fill", "#f1c40f");
+                        .attr("fill", "#00e5a2");
                     updateTooltip(selected, el)
-                } else if (el.percent_gini.slice(0, 4) >= 0.36 && el.percent_gini.slice(0, 4) <= 0.37) {
+                } else if (el.percent.slice(0, 4) >= 85.6 && el.percent.slice(0, 4) <= 86.2) {
                     let selected = d3.select(`#${name}`).append("circle")
                         .attr('transform', function (d) {
                             return 'translate(' + path.centroid(d) + ')'
                         })
                         .style("z-index", "111")
                         .attr("r", 5)
-                        .attr("fill", "#1abc9c");
+                        .attr("fill", "#00c97f");
                     updateTooltip(selected, el)
-                } else if (el.percent_gini.slice(0, 4) >= 0.37 && el.percent_gini.slice(0, 4) <= 0.51) {
+                } else if (el.percent.slice(0, 4) >= 86.2 && el.percent.slice(0, 4) <= 87.3) {
                     let selected = d3.select(`#${name}`).append("circle")
                         .attr('transform', function (d) {
                             return 'translate(' + path.centroid(d) + ')'
                         })
                         .style("z-index", "111")
                         .attr("r", 5)
-                        .attr("fill", "#9b59b6");
+                        .attr("fill", "#00764a");
                     updateTooltip(selected, el)
                 }
             })

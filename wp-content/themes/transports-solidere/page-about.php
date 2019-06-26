@@ -26,7 +26,7 @@ get_header();
                     <p class="target-text">Le but premier est d’éveiller les consciences sur les raisons et l’impact de la « fracture mobilité » en France.  </p>
                 </div>
                 <div class="col-3-about">
-                    <div class="bold-little-title">Servir de relai</div>
+                    <div class="bold-little-title">Servir de relais</div>
                     <p class="target-text">Toute personne engagée, et désirant le changement peut réutiliser nos graphiques pour appuyer ses propos.</p>
                 </div>
                 <div class="col-3-about">
@@ -40,7 +40,7 @@ get_header();
             <span class="bold">Transports Solid’<span class="color-green">ère</span></span>,<br/>
             l'équipe.
             </h2>
-            <div class="flex-container">
+            <div class="flex-start">
                 <div class="col-3-staff">
                     <div class="content-img-staff">
                         <img src="<?= get_template_directory_uri() ?>/assets/img/photos/about/louise.jpeg" alt="L'équipe" class="img-responsive">
@@ -69,6 +69,26 @@ get_header();
                     <div class="content-desc-staff">
                         <div class="name-staff">Kérian Pelat</div>
                         <div class="desc-staff"> Développement, Marketing </div>
+                    </div>
+                </div>
+                <div class="col-3-staff">
+                    <div class="content-img-staff">
+                        <img src="<?= get_template_directory_uri() ?>/assets/img/photos/about/oscar.jpg" alt="L'équipe" class="img-responsive">
+                        <div class="green-overlay"></div>
+                    </div>
+                    <div class="content-desc-staff">
+                        <div class="name-staff">Oscar Halicki</div>
+                        <div class="desc-staff"> Marketing </div>
+                    </div>
+                </div>
+                <div class="col-3-staff">
+                    <div class="content-img-staff">
+                        <img src="<?= get_template_directory_uri() ?>/assets/img/photos/about/victor.png" alt="L'équipe" class="img-responsive">
+                        <div class="green-overlay"></div>
+                    </div>
+                    <div class="content-desc-staff">
+                        <div class="name-staff">Victor Halicki</div>
+                        <div class="desc-staff"> Marketing </div>
                     </div>
                 </div>
             </div>
